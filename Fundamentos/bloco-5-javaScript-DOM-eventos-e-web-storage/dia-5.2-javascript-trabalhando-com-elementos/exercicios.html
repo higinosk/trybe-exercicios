@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //1
+      let novaTag = document.createElement('h1');
+      novaTag.innerText = "Exercicio 5.2 - JavaScript DOM"
+
+      document.body.appendChild(novaTag)
+    //2
+    let tagMain = document.createElement('main')
+    tagMain.className = "main-content";
+    document.body.appendChild(tagMain);
+    //3
+    let tagCenterSection = document.createElement('section');
+    tagCenterSection.className = "center-content";
+    tagMain.appendChild(tagCenterSection);
+    //4
+    let tagP = document.createElement('p');
+    tagP.innerText = "Adicione a tag p como filho do section criado no passo 3 e coloque algum texto:";
+
+    tagCenterSection.appendChild(tagP);
+    //5
+    let tagLeftSection = document.createElement('section');
+    tagLeftSection.className = "left-content";
+    tagMain.appendChild(tagLeftSection);
+    //6
+    let tagRightSection = document.createElement('section');
+    tagRightSection.className = "right-content";
+    tagMain.appendChild(tagRightSection);
+    //7
+    let elementImage = document.createElement('img');
+    elementImage.className = "small=image";
+    elementImage.src = "https://picsum.photos/200";
+    tagLeftSection.appendChild(elementImage);
+    //8
+    let elementUl = document.createElement('ul');
+    tagRightSection.appendChild(elementUl);
+    let numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+    for (let num in numbers) {
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = numbers[num];
+        elementUl.appendChild(elementLi);
+    };
+    //9
+    for (let index = 1; index <= 3; index += 1) {
+        let outraTag = document.createElement('h3');
+        tagMain.appendChild(outraTag);
+    };
+
+    //1
+    let addClassTittle = document.querySelector('h1');
+    addClassTittle.className = "tittle";
+    //2
+    let addClassDescription = document.getElementsByTagName('h3');
+    for(let index = 0; index < 3; index += 1) {
+    addClassDescription[index].className = "description";
+    };
+    //3
+    let removeTagLeftSection = document.getElementsByClassName('left-content')[0];
+    tagMain.removeChild(removeTagLeftSection);
+    //4
+    let centerTagRightSection = document.getElementsByClassName('right-content')[0];
+    centerTagRightSection.style.marginRight='auto';
+    //5
+    let colorTagCenterSection = document.getElementsByClassName('center-content')[0];
+    colorTagCenterSection.style.background='green';
+    //6
+    elementUl.lastChild.remove();
+    elementUl.lastChild.remove();
+    </script>
+  </body>
+</html>
