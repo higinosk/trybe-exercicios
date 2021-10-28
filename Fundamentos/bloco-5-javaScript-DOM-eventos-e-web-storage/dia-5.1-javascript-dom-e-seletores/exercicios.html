@@ -60,33 +60,34 @@
 
       //Exercicio 3
       function changeColorWhite() {
-          let changeCenterContentColor = document.getElementsByClassName("center-content")[0];
-          changeCenterContentColor.style.background = "white";
+        let changeCenterContentColor =
+          document.getElementsByClassName("center-content")[0];
+        changeCenterContentColor.style.background = "white";
       }
       changeColorWhite();
 
       //Exercicio 4
       function correctText() {
-          let changeForCorrectText = document.getElementsByTagName("h1")[0];
-          changeForCorrectText.innerText = "Exercício 5.1 - JavaScript";   
+        let changeForCorrectText = document.getElementsByTagName("h1")[0];
+        changeForCorrectText.innerText = "Exercício 5.1 - JavaScript";
       }
-      correctText()
+      correctText();
 
       //Exercicio 5
-        function changeParagraphCapital() {
-          let capitalParagraph = document.getElementsByTagName('p')[0];
-          capitalParagraph.innerHTML = capitalParagraph.innerHTML.toUpperCase();   
+      function changeParagraphCapital() {
+        let capitalParagraph = document.getElementsByTagName("p")[0];
+        capitalParagraph.innerHTML = capitalParagraph.innerHTML.toUpperCase();
       }
-      changeParagraphCapital()
+      changeParagraphCapital();
 
       //Exercicio 6
       function showParagraphs() {
-      let paragraphs = document.getElementsByTagName('p');
-      for (let index = 0; index < paragraphs.length; index += 1) {
-        console.log(paragraphs[index].innerHTML);
+        let paragraphs = document.getElementsByTagName("p");
+        for (let index = 0; index < paragraphs.length; index += 1) {
+          console.log(paragraphs[index].innerHTML);
+        }
       }
-    }
-    showParagraphs();
+      showParagraphs();
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
