@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles-aula.css" />
+    <title>Submeter Palestra</title>
+  </head>
+
+  <body>
+    <header class="speaker-form-header">
+      <h1>Submeter Palestra</h1>
+      <p>
+        <em>Quer palestrar na nossa conferência? Preencha o formulário!</em>
+      </p>
+    </header>
+    <!-- Form: Para mandar infos para algum lugar
+    action: para onde eu quero enviarlas -->
+    <form action="" method="get" class="speaker-form">
+      <div class="form-row">
+        <div class="line-content">
+          <label for="full-name">Nome</label>
+          <input type="text" name="full-name" id="full-name" />
+        </div>
+      </div>
+      <div class="line-content">
+        <fieldset class="legacy-form-row">
+          <legend>Tipo de Palestra</legend>
+          <input
+            type="radio"
+            name="tipo-palestra"
+            id="tipo1"
+            value="palestra"
+            checked
+          />
+          <label for="tipo1">Sala principal</label>
+          <input
+            type="radio"
+            name="tipo-palestra"
+            id="tipo2"
+            value="workshop"
+          />
+          <label for="tipo2">Workshop</label>
+        </fieldset>
+      </div>
+      <div class="line-content">
+        <label for="t-shirt">Tamanho da camiseta:</label>
+        <select name="t-shirt" id="t-shirt">
+          <option value="pequena">P</option>
+          <option value="media">M</option>
+          <option value="grande">G</option>
+        </select>
+      </div>
+      <div class="line-content">
+        <label for="resumo">Resumo</label>
+        <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+        <span class="instructions"
+          >Descreva a sua palestra em 500 palavras ou menos!</span
+        >
+      </div>
+      <div class="line-content">
+        <!-- Usar o checkbok dentro da label deixa mais alinhado com o resto, questão estetica só. -->
+        <label for="disponibilidade">
+          <input
+            type="checkbox"
+            name="disponibilidade"
+            id="disponibilidade"
+            value="disponibilidade-ok"
+            required
+          />
+          <span
+            >Eu tenho disponibilidade de participar da palestra nessa
+            data!</span
+          >
+        </label>
+      </div>
+      <div class="line-content">
+        <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

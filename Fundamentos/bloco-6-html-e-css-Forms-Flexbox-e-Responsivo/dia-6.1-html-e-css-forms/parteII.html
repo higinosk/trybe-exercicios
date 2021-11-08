@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS - Forms</title>
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+    <!-- Usando o POST não esqueça de usar enctype="multipart/form-data" para varios tipos de arquivos -->
+    <form action="" method="GET">
+        <label for="input-text">Nome completo</label>
+        <br>
+        <br>
+        <input type="text" placeholder="Digite seu nome completo" required class="" value="" name="name-text" id="input-text" >
+        <br>
+        <br>
+        <label for="textarea-text">Sobre você</label>
+        <br>
+        <br>
+        <textarea name="" id="textarea-text cols=" 34" rows="10"
+            placeholder="Sua idade, caracteristicas, músicas favoritas..."></textarea>
+
+        <br>
+        <br>
+        <!-- checkbox varias opções -->
+        <h2>Selecione o seu esporte favorito:</h2>
+        <input type="checkbox" value="fut" name="esporte" >Futebol
+        <input type="checkbox" value="vol" name="esporte">Vôlei
+        <input type="checkbox" value="pet" name="esporte">Peteca
+        <input type="checkbox" value="bas" name="esporte">Basquete
+        <br>
+        <br>
+        <!-- radio só uma opção-->
+        <h2 class="">Sua Hub:</h2>
+        <label for="hub1"><input type="radio" value="sp" id="hub1" name="hub">São Paulo</label>
+        <label for="hub2"><input type="radio" value="bh" id="hub2" name="hub">Belo Horizonte</label>
+        <label for="hub3"><input type="radio" value="fl" id="hub3" name="hub">Florianópolis</label>
+        <label for="hub4"><input type="radio" value="mc" id="hub4" name="hub">Macedônia</label>
+        <br>
+        <br>
+        <h2 class="">Um estado:</h2>
+        <select name="estado" id="dropdown-estado">
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="bh">Bahia</option>
+            <option value="am">Amazonas</option>
+        </select>
+        <br>
+        <br>
+        <h2 class="">Seu usuário:</h2>
+        <p class="">Usuário</p>
+        <input type="text" required name="user" id="user-text">
+        <p class="">Senha</p>
+        <input type="password" required name="senha" id="password-text">
+        <br>
+        <br>
+        <h3 class="">Foto de Perfil</h3>
+        <input type="file" name="" id="">
+        <button type="submit" class="" name="" id="button-submit">Enviar</button>
+    </form>
+</body>
+
+</html>
