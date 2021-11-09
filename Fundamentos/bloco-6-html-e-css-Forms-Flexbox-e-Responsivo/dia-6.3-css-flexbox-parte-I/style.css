@@ -1,0 +1,28 @@
+/* Reset básico para o html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: white;
+  background-color: #5995da;
+  padding: 20px 0;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.menu a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
