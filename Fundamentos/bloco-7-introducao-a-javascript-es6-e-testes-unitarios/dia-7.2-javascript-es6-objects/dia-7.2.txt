@@ -1,0 +1,25 @@
+O que vamos aprender?
+
+    Metodos para interagir com objetos.
+
+    → Object.keys > acessar todas as chaves de um objeto
+    → Object.entries > acessar os pares chave-valor de um objeto.
+    → Object.assign > copiar um objeto.
+    → Object.values > acessar todos os valores de um objeto.
+
+     >> Adicionar propriedades a um objeto <<
+        const customer = {
+  firstName: 'Kamilly',
+  age: 25,
+  job: 'Estudant',
+};
+
+let newKey = 'birth';
+const birth = 'Tramandaí';
+customer[newKey] = birth;
+
+console.log(customer);
+
+--> Object.keys:
+
+
