@@ -1,0 +1,24 @@
+Por que é importante?
+    Responsividade: design e desenvolvimento que se adapta ao usuario.
+    Flexivel: primeiro o design do desktop e desenvolvimento em mobile.
+
+    --> desenvolvimento focado para mobile:
+        * Tempo de carregamento menor: primeiro o CSS para mobile.
+        * Geralemente, resulta em menos linhas de códigos: Blocos mais simples, e depois pode modificar para desktop.
+
+    --> Media Query = Responsividade = redenrizar melhor para outro dispositivo.
+        O que é? Tecnica que permite utilizar @media para incluir um bloco de CSS se uma condição for verdadeira.
+            
+            *Anatomia de um media Query*
+
+                                    @media screen and (max-width: 768px)
+        (Sempre que eu estiver em uma tela E essa tela atender essa condição o bloco de CSS vai ser ativado)
+
+            @media = regra (at-rule) instrução de como se comportar ou executar.
+
+            all/print/screen/speech = tipo de media: especifica qual o tipo de mídia que estamos atuando.
+
+            and = Operador Lógico: condição and/,/not.
+
+            (max-width: 768px) = Media Features (recurso): diversos tipos: viewport/quality (min-width, max-width, height, aspect-ratio...), Display quality (resolution, scan, grid...), Color (inverted-colors, monochrome...), Interaction (any-pointer, any-hover...), etc.
+
