@@ -1,0 +1,82 @@
+O que vamos aprender:
+    + sobre a nova versão do JavaScript, conhecida como ES6, ECMAScript 6 ou ES2015 
+    
+    JavaScript -> TRADEMARK
+
+        → Melhor linguagem para construir aplicações complexas;
+        → Resolver antigos problemas do JavaScript;
+        → Facilitar o desenvolvimento de libraries.
+
+    * Contato com testes
+    * Instalar e utilizar a biblioteca do Jest
+
+Cinco features do ES6:
+    → let;
+    → const;
+    → arrow functions -> Simplificar código.
+    → template literals -> Simplificar a construção de strings.
+    → operador ternário -> expressões condicionais.
+
+Diferença entre var, let e const:
+
+ -> Local onde a variavel é declarada (é como um quarto, eu estou dentro do meu quarto (escopo), eu vou para a sala (estou saindo do meu escopo))
+
+        function userInfo() {
+            let userEmail = 'maria@email.com';
+        // Toda expressão dentro do escopo da função userInfo tem acesso à variavel userEmail
+
+        console.log(userEmail);
+        }
+        userInfo();
+
+Templete literals ${...}:
+
+-> Permite criar strings complexas de forma mais fácil.
+
+    → Como aprendemos a concatenar:
+
+    const myName = "Isabella"
+console.log('Hello' + ' ' + myName + '!');
+
+    → Com Templete literals:
+
+    const myName = "Isabella"
+console.log(`Welcome ${myName}!`);
+
+Arrow functions:
+
+-> Uma forma de declarar uma função de maneira mais 'limpa' e curta.
+
+    → utilizando a sintaxe da arrow functions:
+        const printName = () => {
+            const myname = "Lucas";
+            return myName;
+        }
+        console.log(printName());
+
+    → Também é possivel Simplificar ainda mais tirando o return e as chaves, só se função tiver 1 linha:
+        const printName = () => "Lucas";
+        console.log(printName());
+
+    → Se pode omitir parênteses só quando a função recebe apenas um argumento:
+            const multiplyByTwo = number => number * 2;
+            console.log(multiplyByTwo(10));
+        
+        * Em caso de mais de um parametro:
+        const multiplication = (number, multi) => number * multi;
+        console.log(multiplication(8, 2));
+
+Ternary operator:
+
+-> if/else swich/case
+ Sintaxe simplificada e légivel. só tem duas possibilidades de resposta: x se verdadeiro y se falso.
+ 
+    → Sintaxe básica do operador ternário:    
+        `expressão verdadeira ou falsa` ? `retorno se verdadeira` : `retorno se falsa`;
+    
+        *(x ? y : z)
+            *O x é uma condição que será avaliada como verdadeira ou falsa;
+            *O y é retorno da condição se verdadeira;
+            *O z é retorno se a condição for falsa;
+
+ 
