@@ -1,0 +1,3 @@
+O que vamos aprender?
+    Testes unitarios e testar em pequenos passos.
+
