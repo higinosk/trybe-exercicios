@@ -1,0 +1,6 @@
+Cookies = armazenada no navegador (uma pasta onde guarda as infos em forma de texto) e servidor, max 4kb 
+lgpd = lei geral de protecao de dados - o que pode e nao pode armazenar sobre o usuario
+
+Loca Storage = armazenamento local = armazena na maquina do usuario. capacidade de 5-10mbs (depende do browser), nunca expira.
+ session storage = expira quando a aba fecha, armazena só no navegador, max 5mbs, ou seja, temporario.
+ 
